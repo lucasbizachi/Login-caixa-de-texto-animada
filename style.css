@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #080f16;
+    font-size: 16px;
+}
+
+
+h1 {
+    color: #38f2ff;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 60px;
+    font-family: 'Hind Siliguri', sans-serif;
+    letter-spacing: 5px;
+   
+}
+
+.input-container {
+    width: 280px;
+    position: relative;
+    top: 70px;
+    left: 600px;
+    display: flex;
+    margin: 20px;
+    
+   
+}
+
+.label{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.2s;
+    z-index: 1;
+    color: #b3b3b3;
+    user-select: none;
+}
+
+.text-input {
+    padding: 00.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2f2c45;
+    background: #272530;
+    font-size: 18px;
+    outline: none;transition: all 0.3s;
+    color: #fff;
+    border-radius: 4px;
+    
+}
+
+.label::before {
+    content: '';
+    height: 5px;
+    background: #272530;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.text-input:focus{
+    border: 2px solid #38f2ff;
+}
+
+.text-input:focus + .label {
+    top: -10px;
+    color: #38f2ff;
+    font-size: 18px;
+    text-shadow: 1.5px 1px 2px rgba(8, 8, 8, 0.493);
+}
+
+.text-input::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.text-input:focus::placeholder {
+    opacity: 1;
+}
+
+
+.text-input:not(:placeholder-shown) + .label {
+    top: -10px;
+    color: #38f2ff;
+    font-size: 18;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:90px;
+    background-color: #38f2ff;
+    border: 2px solid #38f2ff;
+    border-radius: 4px;
+    width: 10%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Hind Siliguri', sans-serif;
+    letter-spacing: 3px;
+}
